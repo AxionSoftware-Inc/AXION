@@ -36,14 +36,14 @@ function cx(...parts: Array<string | false | undefined | null>) {
 export const ProcessSteps = component$(() => {
   return (
     <section class="bg-white">
-      <div class="mx-auto max-w-6xl px-4 py-14 sm:px-6 sm:py-16">
+      <div class="mx-auto max-w-6xl section-padding">
         <div class="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
           <div>
             <p class="text-xs font-medium text-black/60">Process</p>
-            <h2 class="mt-2 text-2xl font-semibold tracking-tight text-black sm:text-3xl">
+            <h2 class="mt-2 section-title">
               Clear steps. Clean delivery.
             </h2>
-            <p class="mt-3 max-w-2xl text-sm leading-relaxed text-black/70 sm:text-base">
+            <p class="section-subtitle">
               No chaos, no guessing. We keep the work structured so you always know what’s next.
             </p>
           </div>

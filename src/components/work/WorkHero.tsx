@@ -10,7 +10,7 @@ export const WorkHero = component$(() => {
         <div class="absolute -bottom-52 left-10 h-[420px] w-[420px] rounded-full bg-black/[0.04] blur-3xl" />
       </div>
 
-      <div class="relative mx-auto max-w-6xl px-4 pb-10 pt-16 sm:px-6 sm:pb-12 sm:pt-20">
+      <div class="relative mx-auto max-w-6xl section-padding pt-16 sm:pt-20">
         <div class="max-w-3xl">
           <div class="inline-flex items-center gap-2 rounded-full border border-black/10 bg-white px-3 py-1 text-xs text-black/70 shadow-sm">
             <span class="inline-block h-2 w-2 rounded-full bg-black/60" />

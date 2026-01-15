@@ -1,4 +1,4 @@
-import { component$, useSignal, $, useVisibleTask$ } from "@builder.io/qwik";
+import { component$, useSignal, $, useOnWindow } from "@builder.io/qwik";
 import { Link, useLocation } from "@builder.io/qwik-city";
 
 type NavItem = { label: string; href: string };
@@ -23,14 +23,12 @@ export const Navbar = component$(() => {
     menuOpen.value = false;
   });
 
-  useVisibleTask$(() => {
-    const onScroll = () => {
+  useOnWindow(
+    "scroll",
+    $(() => {
       scrolled.value = window.scrollY > 8;
-    };
-    onScroll();
-    window.addEventListener("scroll", onScroll, { passive: true });
-    return () => window.removeEventListener("scroll", onScroll);
-  });
+    })
+  );
 
   const isActive = (href: string) => {
     // "/" faqat aynan home bo'lganda active bo'lsin

@@ -10,7 +10,7 @@ export const Hero = component$(() => {
         <div class="absolute -bottom-52 left-10 h-[420px] w-[420px] rounded-full bg-black/[0.04] blur-3xl" />
       </div>
 
-      <div class="relative mx-auto max-w-6xl px-4 py-20 sm:px-6 sm:py-24 lg:py-28">
+      <div class="relative mx-auto max-w-6xl section-padding lg:py-28">
         <div class="grid items-center gap-12 lg:grid-cols-12">
           {/* LEFT */}
           <div class="lg:col-span-7">

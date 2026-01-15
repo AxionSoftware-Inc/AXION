@@ -31,6 +31,8 @@ export const ProjectCard = component$(
             alt={`${p.title} video thumbnail`}
             class="h-44 w-full object-cover sm:h-48"
             loading="lazy"
+            width="640"
+            height="360"
             onError$={(e) => {
               const img = e.target as HTMLImageElement;
               img.src = `https://i.ytimg.com/vi/${p.youtubeId}/hqdefault.jpg`;

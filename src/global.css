@@ -96,6 +96,26 @@
   --color-blue-800: #1e40af;
   --color-blue-900: #1e3a8a;
   --color-blue-950: oklch(0.282 0.091 267.935);
+
+  /* Custom Theme Tokens */
+  --color-brand: #000000;
+  --color-brand-muted: rgba(0, 0, 0, 0.6);
+  --color-brand-accent: #000000; /* or primary color */
+  
+  --spacing-section-y: 3.5rem; /* py-14 */
+  --spacing-section-y-sm: 4rem; /* sm:py-16 */
+}
+
+@utility section-padding {
+  @apply px-4 py-14 sm:px-6 sm:py-16;
+}
+
+@utility section-title {
+  @apply text-2xl font-semibold tracking-tight text-black sm:text-3xl;
+}
+
+@utility section-subtitle {
+  @apply mt-3 max-w-2xl text-sm leading-relaxed text-black/70 sm:text-base;
 }
 
 @layer base {

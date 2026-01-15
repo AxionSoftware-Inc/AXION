@@ -37,13 +37,13 @@ export const Faq = component$(() => {
 
   return (
     <section class="bg-white">
-      <div class="mx-auto max-w-6xl px-4 py-14 sm:px-6 sm:py-16">
+      <div class="mx-auto max-w-6xl section-padding">
         <div class="max-w-2xl">
           <p class="text-xs font-medium text-black/60">FAQ</p>
-          <h2 class="mt-2 text-2xl font-semibold tracking-tight text-black sm:text-3xl">
+          <h2 class="mt-2 section-title">
             Answers, not uncertainty
           </h2>
-          <p class="mt-3 text-sm leading-relaxed text-black/70 sm:text-base">
+          <p class="section-subtitle">
             Quick details about how we work, pricing style, and what happens after launch.
           </p>
         </div>

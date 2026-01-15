@@ -51,6 +51,8 @@ export const FeaturedProject = component$((props: { project: Project }) => {
                 alt={p.title}
                 class="h-64 w-full object-cover sm:h-80"
                 loading="lazy"
+                width="800"
+                height="450"
                 onError$={(e) => {
                   const img = e.target as HTMLImageElement;
                   img.src = `https://i.ytimg.com/vi/${p.youtubeId}/hqdefault.jpg`;

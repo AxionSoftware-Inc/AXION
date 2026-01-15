@@ -4,7 +4,7 @@ import { Link } from "@builder.io/qwik-city";
 export const CtaBanner = component$(() => {
   return (
     <section class="bg-white">
-      <div class="mx-auto max-w-6xl px-4 py-14 sm:px-6 sm:py-16">
+      <div class="mx-auto max-w-6xl section-padding">
         <div class="relative overflow-hidden rounded-3xl border border-black/10 bg-white p-6 shadow-sm sm:p-10">
           {/* background accents */}
           <div class="pointer-events-none absolute inset-0">
