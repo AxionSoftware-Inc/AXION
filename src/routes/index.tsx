@@ -1,14 +1,14 @@
 import { component$ } from "@builder.io/qwik";
 import type { DocumentHead } from "@builder.io/qwik-city";
-import { Hero } from "~/components/Hero";
+import { Hero } from "~/components/landing/Hero";
 import { Navbar } from "~/components/Navbar";
-import { ServicesGrid } from "~/components/ServicesGrid";
-import { VideoModal } from "~/components/VideoModal";
-import { WorkGrid } from "~/components/WorkGrid";
-import { ProcessSteps } from "~/components/ProcessSteps";
-import { CtaBanner } from "~/components/CTABanner";
-import { Faq } from "~/components/Faq";
+import { ServicesGrid } from "~/components/landing/ServicesGrid";
+import { VideoModal } from "~/components/landing/VideoModal";
+import { WorkGrid } from "~/components/landing/WorkGrid";
+import { ProcessSteps } from "~/components/landing/ProcessSteps";
+import { Faq } from "~/components/landing/Faq";
 import { Footer } from "~/components/Footer";
+import { CtaBanner } from "~/components/landing/CtaBanner";
 
 export default component$(() => {
   return (
@@ -16,12 +16,12 @@ export default component$(() => {
       <Navbar />
       <Hero />
       <ServicesGrid />
-      <VideoModal open={false} youtubeId="" title="" onClose$={() => {}} />
+      <VideoModal open={false} youtubeId="" title="" onClose$={() => { }} />
       <WorkGrid />
       <ProcessSteps />
-      <CtaBanner/>
-      <Faq/>
-      <Footer/>
+      <CtaBanner />
+      <Faq />
+      <Footer />
     </div>
 
   );
