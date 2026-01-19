@@ -48,16 +48,11 @@ export const Navbar = component$(() => {
       <div class="mx-auto flex h-16 max-w-6xl items-center justify-between px-4 sm:px-6">
         {/* Brand */}
         <Link href="/" class="group flex items-center gap-2" aria-label="Go to home">
-          <div class="grid h-9 w-9 place-items-center rounded-xl border border-black/10 bg-white shadow-sm">
-            <span class="text-sm font-semibold tracking-tight">◼︎</span>
-          </div>
-          <div class="leading-tight">
-            <div class="text-sm font-semibold tracking-tight text-black">
-              Caine Studio
-            </div>
-            <div class="text-xs text-black/60">Web • Mobile • XR</div>
-          </div>
+          <span class="text-[20px] font-semibold tracking-[0.28em] text-black">
+            ACSES
+          </span>
         </Link>
+
 
         {/* Desktop nav */}
         <nav class="hidden items-center gap-1 md:flex" aria-label="Primary">
